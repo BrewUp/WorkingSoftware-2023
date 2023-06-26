@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Muflone" Version="6.2.0" />
+    <ProjectReference Include="..\BrewUp.Modules.Purchases.Messages\BrewUp.Modules.Purchases.Messages.csproj" />
+    <ProjectReference Include="..\BrewUp.Modules.Purchases.SharedKernel\BrewUp.Modules.Purchases.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>

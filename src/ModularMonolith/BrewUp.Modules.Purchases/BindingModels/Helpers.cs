@@ -1,4 +1,6 @@
-﻿namespace BrewUp.Modules.Purchases.BindingModels;
+﻿using BrewUp.Modules.Purchases.SharedKernel.DTOs;
+
+namespace BrewUp.Modules.Purchases.BindingModels;
 
 public static class Helpers
 {

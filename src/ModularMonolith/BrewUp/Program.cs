@@ -1,15 +1,9 @@
 using BrewUp.Modules;
-using BrewUp.Validators;
-using FluentValidation;
-using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register Modules
 builder.RegisterModules();
-
-builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddValidatorsFromAssemblyContaining<SayHelloValidator>();
 
 var app = builder.Build();
 

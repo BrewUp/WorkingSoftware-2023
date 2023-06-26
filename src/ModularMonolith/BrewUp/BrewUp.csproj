@@ -14,6 +14,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
 		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+		<PackageReference Include="Muflone.Eventstore" Version="6.1.1" />
 		<PackageReference Include="Serilog" Version="3.0.1" />
 		<PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
 		<PackageReference Include="Serilog.Settings.Configuration" Version="7.0.0" />
@@ -22,6 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\BrewUp.Modules.Purchases.Infrastructure\BrewUp.Modules.Purchases.Infrastructure.csproj" />
 	  <ProjectReference Include="..\BrewUp.Modules.Purchases\BrewUp.Modules.Purchases.csproj" />
 	  <ProjectReference Include="..\BrewUp.Modules.Warehouses\BrewUp.Modules.Warehouses.csproj" />
 	</ItemGroup>

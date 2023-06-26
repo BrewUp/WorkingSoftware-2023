@@ -13,6 +13,7 @@ public static class PurchasesHelper
 		services.AddValidatorsFromAssemblyContaining<OrderValidator>();
 		services.AddSingleton<ValidationHandler>();
 		services.AddScoped<IPurchasesOrchestrator, PurchasesOrchestrator>();
+
 		return services;
 	}
 }
