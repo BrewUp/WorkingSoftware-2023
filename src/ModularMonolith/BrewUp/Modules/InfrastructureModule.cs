@@ -12,8 +12,9 @@ public class InfrastructureModule : IModule
 	public IServiceCollection RegisterModule(WebApplicationBuilder builder)
 	{
 		builder.Services.AddPurchasesMongoDb(builder.Configuration.GetSection("BrewUp:Purchases:MongoDB").Get<MongoDbSettings>()!);
-		builder.Services.AddMufloneEventStore(builder.Configuration["EventStore:ConnectionString"]!);
-		builder.Services.AddRabbitMq(builder.Configuration.GetSection("RabbitMQ").Get<RabbitMqSettings>()!);
+
+		builder.Services.AddMufloneEventStore(builder.Configuration["BrewUp:EventStore:ConnectionString"]!);
+		builder.Services.AddRabbitMq(builder.Configuration.GetSection("BrewUp:RabbitMQ").Get<RabbitMqSettings>()!);
 
 		return builder.Services;
 	}
