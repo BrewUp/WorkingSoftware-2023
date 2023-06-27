@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrewUp.Modules.Warehouses.Messages\BrewUp.Modules.Warehouses.Messages.csproj" />
+    <ProjectReference Include="..\BrewUp.Modules.Warehouses.SharedKernel\BrewUp.Modules.Warehouses.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>

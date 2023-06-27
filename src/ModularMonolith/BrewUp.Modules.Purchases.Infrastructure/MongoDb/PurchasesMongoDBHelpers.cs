@@ -9,25 +9,14 @@ using Muflone.Eventstore.Persistence;
 
 namespace BrewUp.Modules.Purchases.Infrastructure.MongoDb
 {
-	public static class PurchasesMongoDBHelpers
+	public static class PurchasesMongoDbHelpers
 	{
 		public static IServiceCollection AddPurchasesMongoDb(this IServiceCollection services,
-			MongoDbSettings mongoDbSettings)
+			PurchasesMongoDbSettings mongoDbSettings)
 		{
-			services.AddSingleton<IMongoDatabase>(x =>
+			services.AddSingleton(x =>
 			{
 				BsonDefaults.GuidRepresentation = GuidRepresentation.Standard;
-
-				//BsonClassMap.RegisterClassMap<Enumeration>(cm =>
-				//{
-				//  cm.SetIsRootClass(true);
-				//  cm.MapMember(m => m.Id);
-				//  cm.MapMember(m => m.Name);
-				//});
-				//BsonClassMap.RegisterClassMap<SeatState>(cm =>
-				//{
-				//  cm.MapCreator(c => new SeatState(c.Id, c.Name));
-				//});
 
 				var client = new MongoClient(mongoDbSettings.ConnectionString);
 				var database = client.GetDatabase(mongoDbSettings.DatabaseName);

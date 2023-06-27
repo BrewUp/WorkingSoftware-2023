@@ -1,21 +1,19 @@
-﻿using BrewUp.Modules.Purchases.ReadModel.Entities;
+﻿using BrewUp.Modules.Warehouses.ReadModel.Entities;
 using Microsoft.Extensions.Logging;
-using MongoDB.Bson;
 using MongoDB.Driver;
 using Muflone.Eventstore;
 using Muflone.Eventstore.Persistence;
 
-namespace BrewUp.Modules.Purchases.Infrastructure.MongoDb.Readmodel;
+namespace BrewUp.Modules.Warehouses.Infrastructure.MongoDb.Readmodel;
 
 public class EventStorePositionRepository : IEventStorePositionRepository
 {
 	private readonly IMongoDatabase _database;
 	private readonly ILogger<EventStorePositionRepository> _logger;
 
-	public EventStorePositionRepository(ILogger<EventStorePositionRepository> logger, PurchasesMongoDbSettings mongoDbSettings)
+	public EventStorePositionRepository(ILogger<EventStorePositionRepository> logger, WarehousesMongoDbSettings mongoDbSettings)
 	{
 		this._logger = logger;
-		BsonDefaults.GuidRepresentation = GuidRepresentation.Standard;
 		var client = new MongoClient(mongoDbSettings.ConnectionString);
 		_database = client.GetDatabase(
 			mongoDbSettings.DatabaseName);

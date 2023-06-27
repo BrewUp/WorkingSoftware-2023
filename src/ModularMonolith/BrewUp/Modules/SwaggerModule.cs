@@ -1,4 +1,7 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using BrewUp.Modules.Purchases.BindingModels;
+using Microsoft.OpenApi.Any;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace BrewUp.Modules
 {
@@ -16,16 +19,20 @@ namespace BrewUp.Modules
 		public IServiceCollection RegisterModule(WebApplicationBuilder builder)
 		{
 			builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen(setup => setup.SwaggerDoc("v1", new OpenApiInfo()
+			builder.Services.AddSwaggerGen(setup =>
 			{
-				Description = "BrewUp API",
-				Title = "BrewUp Api",
-				Version = "v1",
-				Contact = new OpenApiContact
+				setup.SchemaFilter<OrderSchemaFilter>();
+				setup.SwaggerDoc("v1", new OpenApiInfo()
 				{
-					Name = "BrewUp.Api"
-				}
-			}));
+					Description = "BrewUp API - REST Service",
+					Title = "BrewUp API",
+					Version = "v1",
+					Contact = new OpenApiContact
+					{
+						Name = "BrewUp.API"
+					}
+				});
+			});
 
 			return builder.Services;
 		}
@@ -34,5 +41,37 @@ namespace BrewUp.Modules
 		{
 			return endpoints;
 		}
+	}
+}
+
+public class OrderSchemaFilter : ISchemaFilter
+{
+	public void Apply(OpenApiSchema schema, SchemaFilterContext context)
+	{
+		if (context.Type == typeof(Order))
+			schema.Example = new OpenApiObject
+			{
+				["Id"] = new OpenApiString(Guid.NewGuid().ToString()),
+				["SupplierId"] = new OpenApiString(Guid.NewGuid().ToString()),
+				["Date"] = new OpenApiDate(DateTime.Today),
+				["Lines"] = new OpenApiArray
+				{
+					new OpenApiObject
+					{
+						["ProductId"] = new OpenApiString(Guid.NewGuid().ToString()),
+						["Title"] = new OpenApiString("Muflone IPA"),
+						["Quantity"] = new OpenApiObject()
+						{
+							["Value"] = new OpenApiDouble(10),
+							["UnitOfMeasure"] = new OpenApiString("N.")
+						},
+						["Price"] = new OpenApiObject()
+						{
+							["Value"] = new OpenApiDouble(7),
+							["Currency"] = new OpenApiString("EUR")
+						}
+					}
+				}
+			};
 	}
 }
