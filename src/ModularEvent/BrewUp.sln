@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90 Presentation", "90 Presentation", "{714EC6A5-5562-4F01-A8FA-02D088CC73CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp", "BrewUp\BrewUp.csproj", "{E9BE7803-9D47-46BF-AD8B-EE60FFE21E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp", "BrewUp\BrewUp.csproj", "{E9BE7803-9D47-46BF-AD8B-EE60FFE21E1C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Modules", "50 Modules", "{D755C7A9-B931-4327-8F51-69300620B3B5}"
 EndProject
@@ -13,21 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Purchases", "Purchases", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Warehouses", "Warehouses", "{4FF3E751-F860-4584-A608-0B8FFDF40853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases", "BrewUp.Modules.Purchases\BrewUp.Modules.Purchases.csproj", "{EBA2816A-C8A1-486B-A544-69A51EA4BE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Purchases", "BrewUp.Modules.Purchases\BrewUp.Modules.Purchases.csproj", "{EBA2816A-C8A1-486B-A544-69A51EA4BE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Warehouses", "BrewUp.Modules.Warehouses\BrewUp.Modules.Warehouses.csproj", "{C342E463-2989-4AE9-8F68-E041FB256EF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Warehouses", "BrewUp.Modules.Warehouses\BrewUp.Modules.Warehouses.csproj", "{C342E463-2989-4AE9-8F68-E041FB256EF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Warehouses.Messages", "BrewUp.Modules.Warehouses.Messages\BrewUp.Modules.Warehouses.Messages.csproj", "{04392A7B-0188-46E7-891D-2EB4968EAEA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Warehouses.Messages", "BrewUp.Modules.Warehouses.Messages\BrewUp.Modules.Warehouses.Messages.csproj", "{04392A7B-0188-46E7-891D-2EB4968EAEA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases.Messages", "BrewUp.Modules.Purchases.Messages\BrewUp.Modules.Purchases.Messages.csproj", "{94D2B8C0-17C4-4074-95F4-A90D0B716F5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Purchases.Messages", "BrewUp.Modules.Purchases.Messages\BrewUp.Modules.Purchases.Messages.csproj", "{94D2B8C0-17C4-4074-95F4-A90D0B716F5D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Shared", "30 Shared", "{E8B3861E-EB5A-4482-B1F8-A526F096B690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Shared", "BrewUp.Shared\BrewUp.Shared.csproj", "{919F2264-18AC-41AA-A6E4-D0B1D98F3BDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Shared", "BrewUp.Shared\BrewUp.Shared.csproj", "{919F2264-18AC-41AA-A6E4-D0B1D98F3BDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Warehouses.SharedKernel", "BrewUp.Modules.Warehouses.SharedKernel\BrewUp.Modules.Warehouses.SharedKernel.csproj", "{5786FCF7-323A-4900-9EE2-4201C3130F33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Warehouses.SharedKernel", "BrewUp.Modules.Warehouses.SharedKernel\BrewUp.Modules.Warehouses.SharedKernel.csproj", "{5786FCF7-323A-4900-9EE2-4201C3130F33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases.SharedKernel", "BrewUp.Modules.Purchases.SharedKernel\BrewUp.Modules.Purchases.SharedKernel.csproj", "{C07B89DD-28C1-4894-B728-3449215D2AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrewUp.Modules.Purchases.SharedKernel", "BrewUp.Modules.Purchases.SharedKernel\BrewUp.Modules.Purchases.SharedKernel.csproj", "{C07B89DD-28C1-4894-B728-3449215D2AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases.ReadModel", "BrewUp.Modules.Purchases.ReadModel\BrewUp.Modules.Purchases.ReadModel.csproj", "{AFC10FB5-D453-4E2D-8264-EAC643D2408A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases.Domain", "BrewUp.Modules.Purchases.Domain\BrewUp.Modules.Purchases.Domain.csproj", "{9A4441C0-AA26-486B-9369-620DB8D12C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,14 @@ Global
 		{C07B89DD-28C1-4894-B728-3449215D2AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C07B89DD-28C1-4894-B728-3449215D2AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C07B89DD-28C1-4894-B728-3449215D2AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC10FB5-D453-4E2D-8264-EAC643D2408A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC10FB5-D453-4E2D-8264-EAC643D2408A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC10FB5-D453-4E2D-8264-EAC643D2408A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC10FB5-D453-4E2D-8264-EAC643D2408A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4441C0-AA26-486B-9369-620DB8D12C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4441C0-AA26-486B-9369-620DB8D12C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4441C0-AA26-486B-9369-620DB8D12C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4441C0-AA26-486B-9369-620DB8D12C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +94,8 @@ Global
 		{919F2264-18AC-41AA-A6E4-D0B1D98F3BDE} = {E8B3861E-EB5A-4482-B1F8-A526F096B690}
 		{5786FCF7-323A-4900-9EE2-4201C3130F33} = {4FF3E751-F860-4584-A608-0B8FFDF40853}
 		{C07B89DD-28C1-4894-B728-3449215D2AD6} = {E7AE555E-31B8-494B-BD26-6CF3D9716C9E}
+		{AFC10FB5-D453-4E2D-8264-EAC643D2408A} = {E7AE555E-31B8-494B-BD26-6CF3D9716C9E}
+		{9A4441C0-AA26-486B-9369-620DB8D12C3D} = {E7AE555E-31B8-494B-BD26-6CF3D9716C9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE89C135-C3A5-4387-8029-FF89C014DA99}

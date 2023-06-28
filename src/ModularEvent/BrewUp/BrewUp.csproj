@@ -21,4 +21,9 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\BrewUp.Modules.Purchases.Domain\BrewUp.Modules.Purchases.Domain.csproj" />
+	  <ProjectReference Include="..\BrewUp.Modules.Purchases\BrewUp.Modules.Purchases.csproj" />
+	</ItemGroup>
+
 </Project>
