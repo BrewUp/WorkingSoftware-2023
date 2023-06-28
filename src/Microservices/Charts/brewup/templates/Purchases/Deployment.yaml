@@ -17,16 +17,20 @@ spec:
           image: {{.Values.purchases.image}}
           imagePullPolicy: IfNotPresent
           env:
-            - name: BrewUp__MongoDb__ConnectionString
+            - name: MongoDb__ConnectionString
               value: 'mongodb://root:t00rM3Pswd@brewup-mongodb.default.svc.cluster.local:27017/brewup-purchases?authSource=admin'
-            - name: BrewUp__MongoDb__DatabaseName
+            - name: MongoDb__DatabaseName
               value: 'brewup-purchases'
-            - name: BrewUp__RabbitMQ__Username
+            - name: RabbitMQ__Username
               value: {{.Values.rabbitmq.auth.username }}
-            - name: BrewUp__RabbitMQ__Password
+            - name: RabbitMQ__Password
               value: {{.Values.rabbitmq.auth.password }}
-            - name: BrewUp__RabbitMQ__Host
+            - name: RabbitMQ__Host
               value: {{.Values.serviceBus }}
+            - name: EventStore__ConnectionString
+              value: 'ConnectTo=tcp://brewup-eventstore-purchases.default.svc.cluster.local:{{.Values.purchases.eventStore.externalHttpPort }};UseSslConnection=false'
+          ports:
+            - containerPort: 80
       restartPolicy: Always
   selector:
     matchLabels:

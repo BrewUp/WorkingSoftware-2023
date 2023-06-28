@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eventstore-{{.Values.warehouses.name}}
+  name: eventstore-{{.Values.purchases.name}}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eventstore-{{.Values.warehouses.name}}
+      app: eventstore-{{.Values.purchases.name}}
   template:
     metadata:
       labels:
-        app: eventstore-{{.Values.warehouses.name}}
+        app: eventstore-{{.Values.purchases.name}}
     spec:
       containers:
         - name: eventstore-production
@@ -24,9 +24,9 @@ spec:
             - name: EVENTSTORE_START_STANDARD_PROJECTIONS
               value: "true"
             - name: EVENTSTORE_EXT_TCP_PORT
-              value: {{.Values.warehouses.eventStore.externalHttpPort | quote }}
+              value: {{.Values.purchases.eventStore.externalHttpPort | quote }}
             - name: EVENTSTORE_HTTP_PORT
-              value: {{.Values.warehouses.eventStore.httpPort | quote }}
+              value: {{.Values.purchases.eventStore.httpPort | quote }}
             - name: EVENTSTORE_INSECURE
               value: "true"
             - name: EVENTSTORE_ENABLE_EXTERNAL_TCP
@@ -36,6 +36,6 @@ spec:
             - name: EVENTSTORE_ALLOW_UNKNOWN_OPTIONS
               value: "true"
           ports:
-            - containerPort: {{.Values.warehouses.eventStore.externalHttpPort}}
-            - containerPort: {{.Values.warehouses.eventStore.httpPort}}
+            - containerPort: {{.Values.purchases.eventStore.externalHttpPort}}
+            - containerPort: {{.Values.purchases.eventStore.httpPort}}
       restartPolicy: Always

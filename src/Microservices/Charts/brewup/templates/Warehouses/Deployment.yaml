@@ -27,6 +27,10 @@ spec:
               value: {{.Values.rabbitmq.auth.password }}
             - name: BrewUp__RabbitMQ__Host
               value: {{.Values.serviceBus }}
+            - name: BrewUp__EventStore__ConnectionString
+              value: 'ConnectTo=tcp://brewup-eventstore-warehouses.default.svc.cluster.local:{{.Values.warehouses.eventStore.externalHttpPort }};UseSslConnection=false'
+          ports:
+            - containerPort: 80
       restartPolicy: Always
   selector:
     matchLabels:
