@@ -1,0 +1,11 @@
+purchases:
+  name: purchases
+  image: rg.fr-par.scw.cloud/working-software-2023/purchases:latest
+
+warehouses:
+  name: warehouses
+  image: rg.fr-par.scw.cloud/working-software-2023/warehouses:latest
+  
+mongodb: 
+  auth:
+    rootPassword: crazyAmazingFakePassword
