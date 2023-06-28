@@ -1,6 +1,7 @@
 ﻿using BrewUp.Modules.Purchases;
 using BrewUp.Modules.Purchases.Domain;
 using BrewUp.Modules.Purchases.Endpoints;
+using BrewUp.Modules.Purchases.ReadModel;
 
 namespace BrewUp.Modules;
 
@@ -13,6 +14,7 @@ public class PurchasesModule : IModule
 	{
 		builder.Services.AddPurchases();
 		builder.Services.AddPurchasesDomain();
+		builder.Services.AddPurchasesReadModel();
 
 		return builder.Services;
 	}

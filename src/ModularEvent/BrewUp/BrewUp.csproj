@@ -23,6 +23,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\BrewUp.Modules.Purchases.Domain\BrewUp.Modules.Purchases.Domain.csproj" />
+	  <ProjectReference Include="..\BrewUp.Modules.Purchases.ReadModel\BrewUp.Modules.Purchases.ReadModel.csproj" />
 	  <ProjectReference Include="..\BrewUp.Modules.Purchases\BrewUp.Modules.Purchases.csproj" />
 	</ItemGroup>
 
