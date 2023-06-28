@@ -7,7 +7,7 @@ namespace BrewUp.Modules.Warehouses.ReadModel.Services;
 
 public class BeerService : WarehouseBaseService, IBeerService
 {
-	public BeerService(ILoggerFactory loggerFactory, IWarehousesPersister persister) : base(loggerFactory, persister)
+	public BeerService(ILoggerFactory loggerFactory, IPersister persister) : base(loggerFactory, persister)
 	{
 	}
 
