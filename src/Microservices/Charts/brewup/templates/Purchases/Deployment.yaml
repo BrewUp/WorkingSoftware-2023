@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: purchases
+  labels:
+    app: purchases
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: purchases
+      labels:
+        app: purchases
+    spec:
+      containers:
+        - name: purchases
+          image: rg.fr-par.scw.cloud/working-software-2023/purchases:latest
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: purchases

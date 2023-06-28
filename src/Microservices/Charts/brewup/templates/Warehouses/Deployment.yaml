@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: warehouses
+  labels:
+    app: warehouses
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: warehouses
+      labels:
+        app: warehouses
+    spec:
+      containers:
+        - name: warehouses
+          image: rg.fr-par.scw.cloud/working-software-2023/warehouses
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: warehouses
