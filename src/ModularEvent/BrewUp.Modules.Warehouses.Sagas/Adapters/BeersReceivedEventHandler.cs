@@ -1,4 +1,4 @@
-﻿using BrewUp.Modules.Warehouses.Messages.Events;
+﻿using BrewUp.Shared.Messages;
 using MediatR;
 
 namespace BrewUp.Modules.Warehouses.Sagas.Adapters;

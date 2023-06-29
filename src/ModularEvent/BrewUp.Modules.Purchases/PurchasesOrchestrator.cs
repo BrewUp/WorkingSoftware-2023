@@ -1,6 +1,7 @@
 ﻿using BrewUp.Modules.Purchases.BindingModels;
 using BrewUp.Modules.Purchases.Messages.Commands;
 using BrewUp.Modules.Purchases.SharedKernel.DomainIds;
+using BrewUp.Shared.DomainIds;
 using MediatR;
 
 namespace BrewUp.Modules.Purchases;

@@ -1,6 +1,7 @@
-﻿using BrewUp.Modules.Warehouses.SharedKernel.DomainIds;
-using BrewUp.Modules.Warehouses.SharedKernel.Dtos;
+﻿using BrewUp.Modules.Warehouses.SharedKernel.Dtos;
 using BrewUp.Shared.Abstracts;
+using BrewUp.Shared.DomainIds;
+using BrewUp.Shared.Dtos;
 
 namespace BrewUp.Modules.Warehouses.Messages.Events;
 

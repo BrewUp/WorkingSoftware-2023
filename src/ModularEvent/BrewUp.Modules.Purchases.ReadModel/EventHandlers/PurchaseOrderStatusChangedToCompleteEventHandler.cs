@@ -1,4 +1,5 @@
 ﻿using BrewUp.Modules.Purchases.Messages.Events;
+using BrewUp.Shared.Messages;
 using MediatR;
 
 namespace BrewUp.Modules.Purchases.ReadModel.EventHandlers;

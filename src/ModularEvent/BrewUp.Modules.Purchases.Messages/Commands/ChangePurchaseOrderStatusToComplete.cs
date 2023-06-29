@@ -1,5 +1,5 @@
-﻿using BrewUp.Modules.Purchases.SharedKernel.DomainIds;
-using BrewUp.Shared.Abstracts;
+﻿using BrewUp.Shared.Abstracts;
+using BrewUp.Shared.DomainIds;
 
 namespace BrewUp.Modules.Purchases.Messages.Commands;
 

@@ -1,4 +1,6 @@
-﻿namespace BrewUp.Modules.Warehouses.SharedKernel.Dtos;
+﻿using BrewUp.Shared.Dtos;
+
+namespace BrewUp.Modules.Warehouses.SharedKernel.Dtos;
 
 public class BeerJson
 {

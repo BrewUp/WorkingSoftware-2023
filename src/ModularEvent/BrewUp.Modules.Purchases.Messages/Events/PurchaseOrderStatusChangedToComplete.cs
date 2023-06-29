@@ -1,6 +1,6 @@
-﻿using BrewUp.Modules.Purchases.SharedKernel.DomainIds;
-using BrewUp.Modules.Purchases.SharedKernel.Dtos;
-using BrewUp.Shared.Abstracts;
+﻿using BrewUp.Shared.Abstracts;
+using BrewUp.Shared.DomainIds;
+using BrewUp.Shared.Dtos;
 
 namespace BrewUp.Modules.Purchases.Messages.Events;
 

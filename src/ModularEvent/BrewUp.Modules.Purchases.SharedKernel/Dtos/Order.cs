@@ -1,4 +1,6 @@
-﻿namespace BrewUp.Modules.Purchases.SharedKernel.Dtos;
+﻿using BrewUp.Shared.Dtos;
+
+namespace BrewUp.Modules.Purchases.SharedKernel.Dtos;
 
 public class Order
 {

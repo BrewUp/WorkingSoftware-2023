@@ -1,6 +1,6 @@
 ﻿using BrewUp.Modules.Purchases.Messages.Commands;
 using BrewUp.Modules.Purchases.Messages.Events;
-using BrewUp.Modules.Purchases.SharedKernel.Dtos;
+using BrewUp.Shared.Dtos;
 using MediatR;
 
 namespace BrewUp.Modules.Purchases.Domain.CommandHandlers;
