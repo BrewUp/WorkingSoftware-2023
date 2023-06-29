@@ -1,0 +1,26 @@
+purchases:
+  name: purchases
+  image: rg.fr-par.scw.cloud/working-software-2023/purchases:latest
+  eventStore:
+    httpPort: 2113
+    externalHttpPort: 1113
+
+warehouses:
+  name: warehouses
+  image: rg.fr-par.scw.cloud/working-software-2023/warehouses:latest
+  eventStore:
+    httpPort: 2113
+    externalHttpPort: 1113
+  
+serviceBus: brewup-rabbitmq.default.svc.cluster.local
+
+mongodb:
+  architecture: "standalone"
+  auth:
+    rootPassword: t00rM3Pswd
+    
+rabbitmq: 
+  auth: 
+    username: guest
+    password: guest
+    erlangCookie: "SWQOKODSQALRPCLNMEQG"
