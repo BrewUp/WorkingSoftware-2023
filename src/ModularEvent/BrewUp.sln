@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Warehouses.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Warehouses.ReadModel", "BrewUp.Modules.Warehouses.ReadModel\BrewUp.Modules.Warehouses.ReadModel.csproj", "{6FEF87BD-4736-44C3-847B-500DACC1525A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5679DA18-65A7-4292-8633-71C79BAA53A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewUp.Modules.Purchases.FitnessTests", "BrewUp.Modules.Purchases.FitnessTests\BrewUp.Modules.Purchases.FitnessTests.csproj", "{F9296B43-0240-4F27-BC6D-31196304D52A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{6FEF87BD-4736-44C3-847B-500DACC1525A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEF87BD-4736-44C3-847B-500DACC1525A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEF87BD-4736-44C3-847B-500DACC1525A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9296B43-0240-4F27-BC6D-31196304D52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9296B43-0240-4F27-BC6D-31196304D52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9296B43-0240-4F27-BC6D-31196304D52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9296B43-0240-4F27-BC6D-31196304D52A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +125,8 @@ Global
 		{C4BFBC88-7A19-47B0-8A18-C2B38CE83907} = {4FF3E751-F860-4584-A608-0B8FFDF40853}
 		{5F27E9C5-68F2-4D64-AEB3-779BF7A097D8} = {4FF3E751-F860-4584-A608-0B8FFDF40853}
 		{6FEF87BD-4736-44C3-847B-500DACC1525A} = {4FF3E751-F860-4584-A608-0B8FFDF40853}
+		{5679DA18-65A7-4292-8633-71C79BAA53A5} = {E7AE555E-31B8-494B-BD26-6CF3D9716C9E}
+		{F9296B43-0240-4F27-BC6D-31196304D52A} = {5679DA18-65A7-4292-8633-71C79BAA53A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE89C135-C3A5-4387-8029-FF89C014DA99}
