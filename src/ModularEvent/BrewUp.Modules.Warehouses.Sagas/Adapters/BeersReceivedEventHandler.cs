@@ -1,4 +1,5 @@
-﻿using BrewUp.Shared.Messages;
+﻿using BrewUp.Modules.Warehouses.Messages.Commands;
+using BrewUp.Shared.Messages;
 using MediatR;
 
 namespace BrewUp.Modules.Warehouses.Sagas.Adapters;
@@ -12,8 +13,9 @@ public sealed class BeersReceivedEventHandler : INotificationHandler<BeersReceiv
 		_serviceBus = serviceBus;
 	}
 
-	public Task Handle(BeersReceived notification, CancellationToken cancellationToken)
+	public async Task Handle(BeersReceived @event, CancellationToken cancellationToken)
 	{
-		return Task.CompletedTask;
+		var command = new StartBeersReceivedSaga(@event.PurchaseOrderId, @event.OrderLines);
+		await _serviceBus.Send(command, cancellationToken);
 	}
 }
