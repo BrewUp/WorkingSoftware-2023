@@ -1,3 +1,5 @@
-﻿namespace BrewUp.Modules.Warehouses.SharedKernel.DomainIds;
+﻿using BrewUp.Shared.Abstracts;
 
-public record BeerId(Guid Value);
+namespace BrewUp.Modules.Warehouses.SharedKernel.DomainIds;
+
+public record BeerId(Guid Value) : DomainId(Value);

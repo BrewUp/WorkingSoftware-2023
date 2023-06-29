@@ -5,9 +5,16 @@ namespace BrewUp.Modules.Purchases.ReadModel.EventHandlers;
 
 public class PurchaseOrderStatusChangedToCompleteEventHandler : INotificationHandler<PurchaseOrderStatusChangedToComplete>
 {
-	public Task Handle(PurchaseOrderStatusChangedToComplete notification, CancellationToken cancellationToken)
+	private readonly IMediator _serviceBus;
+
+	public PurchaseOrderStatusChangedToCompleteEventHandler(IMediator serviceBus)
 	{
-		// Update the read model
-		return Task.CompletedTask;
+		_serviceBus = serviceBus;
+	}
+
+	public async Task Handle(PurchaseOrderStatusChangedToComplete notification, CancellationToken cancellationToken)
+	{
+		var beersReceived = new BeersReceived(notification.PurchaseOrderId, notification.Lines);
+		await _serviceBus.Publish(beersReceived, cancellationToken);
 	}
 }

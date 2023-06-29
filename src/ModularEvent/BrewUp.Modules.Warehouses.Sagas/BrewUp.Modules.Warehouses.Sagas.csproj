@@ -7,17 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Events\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BrewUp.Modules.Warehouses.SharedKernel\BrewUp.Modules.Warehouses.SharedKernel.csproj" />
-    <ProjectReference Include="..\BrewUp.Shared\BrewUp.Shared.csproj" />
+    <ProjectReference Include="..\BrewUp.Modules.Warehouses.Messages\BrewUp.Modules.Warehouses.Messages.csproj" />
   </ItemGroup>
 
 </Project>
